@@ -36,30 +36,30 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\SurfaceCacheWorld.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\SurfaceCacheRenderPipelineResources.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\SurfaceCache.cs" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\PatchUtil.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Defrag.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\TemporalFiltering.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\SpatialFiltering.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\PathTracing.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\VectorLogic.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Unity.SurfaceCache.Runtime.asmdef" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RestirEstimation.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RestirEstimation.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RingBuffer.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Scrolling.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\UniformEstimation.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RestirCandidateTemporal.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Eviction.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\IrradianceCompression.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RestirSpatial.compute" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Common.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\TemporalFiltering.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\Estimation.hlsl" />
-     <None Include="Packages\com.unity.render-pipelines.core\Runtime\Lighting\SurfaceCache\RisEstimation.hlsl" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\SurfaceCacheWorld.cs" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\SurfaceCacheRenderPipelineResources.cs" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\SurfaceCache.cs" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\PatchUtil.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Defrag.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\TemporalFiltering.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\SpatialFiltering.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\PathTracing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\VectorLogic.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Unity.SurfaceCache.Runtime.asmdef" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RestirEstimation.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RestirEstimation.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RingBuffer.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Scrolling.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\UniformEstimation.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RestirCandidateTemporal.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Eviction.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\IrradianceCompression.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RestirSpatial.compute" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Common.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\TemporalFiltering.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\Estimation.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Runtime\Lighting\SurfaceCache\RisEstimation.hlsl" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -68,9 +68,6 @@
     </Reference>
     <Reference Include="UnityEngine.AIModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AMDModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AMDModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
@@ -129,9 +126,6 @@
     <Reference Include="UnityEngine.GridModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.HierarchyModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.HierarchyCoreModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll</HintPath>
     </Reference>
@@ -170,9 +164,6 @@
     </Reference>
     <Reference Include="UnityEngine.MultiplayerModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.NVIDIAModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>

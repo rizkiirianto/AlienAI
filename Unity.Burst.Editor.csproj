@@ -36,26 +36,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.burst\Editor\BurstInspectorGUI.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.Wasm.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.LLVMIR.info.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.LLVMIR.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstPlatformAotSettings.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.ARM64.info.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\LongTextArea.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.ARM64.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstStringSearch.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.Wasm.info.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.x86.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstAotCompiler.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstLoader.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\LabeledPopup.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstDisassembler.Core.x86.info.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstMath.cs" />
-     <Compile Include="Packages\com.unity.burst\Editor\BurstMenu.cs" />
-     <None Include="Packages\com.unity.burst\Editor\Unity.Burst.Editor.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstInspectorGUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.Wasm.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.LLVMIR.info.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.LLVMIR.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstPlatformAotSettings.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.ARM64.info.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\LongTextArea.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.ARM64.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstStringSearch.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.Wasm.info.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.x86.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstAotCompiler.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstLoader.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\LabeledPopup.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstDisassembler.Core.x86.info.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstMath.cs" />
+     <Compile Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\BurstMenu.cs" />
+     <None Include="Library\PackageCache\com.unity.burst@07790c2d06d9\Editor\Unity.Burst.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -908,6 +908,16 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8914cfd5-fed5-7614-72a4-40434cd00892}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

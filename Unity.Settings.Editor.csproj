@@ -36,20 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.settings-manager\Editor\SettingsDictionary.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\ISettingsRepository.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\UserSettingsRepository.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\UserSettingsProvider.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\SettingsGUILayout.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\PackageSettingsRepository.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\Attributes.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\ValueWrapper.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\FileSettingsRepository.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\ProjectUserSettings.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\UserSetting.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\UserSettings.cs" />
-     <Compile Include="Packages\com.unity.settings-manager\Editor\Settings.cs" />
-     <None Include="Packages\com.unity.settings-manager\Editor\Unity.Settings.Editor.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\SettingsDictionary.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\ISettingsRepository.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\UserSettingsRepository.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\UserSettingsProvider.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\SettingsGUILayout.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\PackageSettingsRepository.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\Attributes.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\ValueWrapper.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\FileSettingsRepository.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\ProjectUserSettings.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\UserSetting.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\UserSettings.cs" />
+     <Compile Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\Settings.cs" />
+     <None Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\Editor\Unity.Settings.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -897,6 +897,16 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8914cfd5-fed5-7614-72a4-40434cd00892}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

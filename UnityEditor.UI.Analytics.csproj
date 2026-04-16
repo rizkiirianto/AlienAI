@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.ugui\Editor\Analytics\IAnalytic\UGUIBuildEvent.cs" />
-     <Compile Include="Packages\com.unity.ugui\Editor\Analytics\UGUIAnalytics.cs" />
-     <Compile Include="Packages\com.unity.ugui\Editor\Analytics\UGUIBuildAnalytics.cs" />
-     <None Include="Packages\com.unity.ugui\Editor\Analytics\UnityEditor.UI.Analytics.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.ugui@3dd2fbd8c1f1\Editor\Analytics\IAnalytic\UGUIBuildEvent.cs" />
+     <Compile Include="Library\PackageCache\com.unity.ugui@3dd2fbd8c1f1\Editor\Analytics\UGUIAnalytics.cs" />
+     <Compile Include="Library\PackageCache\com.unity.ugui@3dd2fbd8c1f1\Editor\Analytics\UGUIBuildAnalytics.cs" />
+     <None Include="Library\PackageCache\com.unity.ugui@3dd2fbd8c1f1\Editor\Analytics\UnityEditor.UI.Analytics.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -892,6 +892,16 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{af14404a-babc-701b-10d5-a322bb5e545e}</Project>
       <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

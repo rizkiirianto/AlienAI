@@ -36,20 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherHighlighter.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherDatabaseBase.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherAdapter.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherWindow.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherDatabase.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\Searcher.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherItem.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherControl.cs" />
-     <Compile Include="Packages\com.unity.searcher\Editor\Searcher\SearcherTreeUtility.cs" />
-     <None Include="Packages\com.unity.searcher\Editor\Unity.Searcher.Editor.asmdef" />
-     <None Include="Packages\com.unity.searcher\Editor\Resources\SearcherItem.uxml" />
-     <None Include="Packages\com.unity.searcher\Editor\Resources\SearcherWindow.uxml" />
-     <None Include="Packages\com.unity.searcher\Editor\Resources\Searcher.uss" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherHighlighter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherDatabaseBase.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherAdapter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherWindow.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherDatabase.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\Searcher.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherControl.cs" />
+     <Compile Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Searcher\SearcherTreeUtility.cs" />
+     <None Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Unity.Searcher.Editor.asmdef" />
+     <None Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Resources\SearcherItem.uxml" />
+     <None Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Resources\SearcherWindow.uxml" />
+     <None Include="Library\PackageCache\com.unity.searcher@d45a78918735\Editor\Resources\Searcher.uss" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -897,6 +897,16 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8914cfd5-fed5-7614-72a4-40434cd00892}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

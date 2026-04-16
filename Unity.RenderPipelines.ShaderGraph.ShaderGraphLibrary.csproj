@@ -36,20 +36,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\DummyShaderGraphLibrary.cs" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\LODDitheringTransition.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Nature\SpeedTreeCommon.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\PreviewVaryings.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Functions.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\GeometricTools.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariables.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Nature\SpeedTree8Wind.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Nature\SpeedTree9Wind.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\PreviewPass.hlsl" />
-     <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\DummyShaderGraphLibrary.cs" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\LODDitheringTransition.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\Nature\SpeedTreeCommon.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\PreviewVaryings.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\Functions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\GeometricTools.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\ShaderVariables.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\Nature\SpeedTree8Wind.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\Nature\SpeedTree9Wind.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\PreviewPass.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@c6e5f4d3afa5\ShaderGraphLibrary\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -58,9 +58,6 @@
     </Reference>
     <Reference Include="UnityEngine.AIModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AMDModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AMDModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
@@ -119,9 +116,6 @@
     <Reference Include="UnityEngine.GridModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.HierarchyModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.HierarchyCoreModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll</HintPath>
     </Reference>
@@ -160,9 +154,6 @@
     </Reference>
     <Reference Include="UnityEngine.MultiplayerModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.NVIDIAModule">
-        <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>

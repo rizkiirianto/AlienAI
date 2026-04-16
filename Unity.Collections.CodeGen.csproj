@@ -36,11 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.collections\Unity.Collections.CodeGen\JobsILPostProcessor.cs" />
-     <Compile Include="Packages\com.unity.collections\Unity.Collections.CodeGen\CecilExtensionMethods.cs" />
-     <Compile Include="Packages\com.unity.collections\Unity.Collections.CodeGen\UserError.cs" />
-     <Compile Include="Packages\com.unity.collections\Unity.Collections.CodeGen\JobReflectionDataPostProcessor.cs" />
-     <None Include="Packages\com.unity.collections\Unity.Collections.CodeGen\Unity.Collections.CodeGen.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.collections@538ace9075bc\Unity.Collections.CodeGen\JobsILPostProcessor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.collections@538ace9075bc\Unity.Collections.CodeGen\CecilExtensionMethods.cs" />
+     <Compile Include="Library\PackageCache\com.unity.collections@538ace9075bc\Unity.Collections.CodeGen\UserError.cs" />
+     <Compile Include="Library\PackageCache\com.unity.collections@538ace9075bc\Unity.Collections.CodeGen\JobReflectionDataPostProcessor.cs" />
+     <None Include="Library\PackageCache\com.unity.collections@538ace9075bc\Unity.Collections.CodeGen\Unity.Collections.CodeGen.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

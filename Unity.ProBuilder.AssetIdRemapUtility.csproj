@@ -36,14 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssemblyInfo.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssetIdRemapEditor.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssetTreeView.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssetIdRemapBuilderEditor.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssetIdRemapBuilderTreeView.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\PackageImporter.cs" />
-     <Compile Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\AssetId.cs" />
-     <None Include="Packages\com.unity.probuilder\AssetIdRemapUtility\Editor\Unity.ProBuilder.AssetIdRemapUtility.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssemblyInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssetIdRemapEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssetTreeView.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssetIdRemapBuilderEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssetIdRemapBuilderTreeView.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\PackageImporter.cs" />
+     <Compile Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\AssetId.cs" />
+     <None Include="Library\PackageCache\com.unity.probuilder@1f279ab829b7\AssetIdRemapUtility\Editor\Unity.ProBuilder.AssetIdRemapUtility.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -891,6 +891,16 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8914cfd5-fed5-7614-72a4-40434cd00892}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.render-pipelines.core\Editor\UnifiedRayTracing\CreateUnifiedRTShaderMenuItem.cs" />
-     <Compile Include="Packages\com.unity.render-pipelines.core\Editor\UnifiedRayTracing\UnifiedRTShaderImporter.cs" />
-     <None Include="Packages\com.unity.render-pipelines.core\Editor\UnifiedRayTracing\Unity.UnifiedRayTracing.Editor.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Editor\UnifiedRayTracing\CreateUnifiedRTShaderMenuItem.cs" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Editor\UnifiedRayTracing\UnifiedRTShaderImporter.cs" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@6a60abc179f8\Editor\UnifiedRayTracing\Unity.UnifiedRayTracing.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity Module/6000.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -886,6 +886,16 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8914cfd5-fed5-7614-72a4-40434cd00892}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{b902cae9-1342-ac5a-cdd8-3bc0fb6b2ea5}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{1b5958c8-1dd2-0ff2-20f2-71324fdd75df}</Project>
+      <Name>UnityEngine.TestRunner</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

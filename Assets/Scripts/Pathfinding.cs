@@ -16,6 +16,7 @@ public class Pathfinding : MonoBehaviour
     GameObject player;
     GameManager manager;
     HunterFOV fov;
+    DirectorAI director;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Pathfinding : MonoBehaviour
         player = GameObject.Find("Player");
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         fov = GetComponent<HunterFOV>();
+        director = FindObjectOfType<DirectorAI>();
 
         if (advancedLocations == null)
             advancedLocations = new List<Transform>();
@@ -39,6 +41,8 @@ public class Pathfinding : MonoBehaviour
     private void FixedUpdate()
     {
         seePlayer = HunterFOV.inFOV(transform, player.transform, 45f, 20f, 12f, 5f);
+        if (director != null)
+            director.SetDirectSight(seePlayer);
 
         if (seePlayer)
         {
@@ -125,6 +129,8 @@ public class Pathfinding : MonoBehaviour
         }
 
         advancedLocations.Add(searchLocations[index]);
+        if (director != null)
+            director.ReportHidingSpotUsed(index);
         Debug.Log("AI Belajar! Lokasi sembunyi index ke-" + index + " ditambahkan ke rute patroli.");
     }
 
