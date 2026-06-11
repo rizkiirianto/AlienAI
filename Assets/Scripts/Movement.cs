@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
 
     private Vector3 velocity;
     private bool isGrounded;
+    private bool movementLocked;
 
     void Start()
     {
@@ -37,6 +38,13 @@ public class Movement : MonoBehaviour
         {
             // Keep the player snapped to the ground smoothly
             velocity.y = -2f; 
+        }
+
+        if (movementLocked)
+        {
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
+            return;
         }
 
         // 2. READ MOVEMENT INPUT
@@ -63,5 +71,10 @@ public class Movement : MonoBehaviour
         
         // Apply the gravity/jump velocity to the controller
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    public void SetMovementLocked(bool locked)
+    {
+        movementLocked = locked;
     }
 }

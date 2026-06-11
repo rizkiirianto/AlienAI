@@ -70,6 +70,9 @@ public class DirectorAI : MonoBehaviour
     private int lastHidingIndex = -1;
     private int sameHidingStreak;
 
+    private bool isMenaceLocked;
+    private float lockedMenaceValue;
+
     public float MenaceGauge => menaceGauge;
     public MenaceState CurrentState => currentState;
 
@@ -138,6 +141,7 @@ public class DirectorAI : MonoBehaviour
 
     public void AddMenace(float amount)
     {
+        if (isMenaceLocked) return;
         menaceGauge = Mathf.Clamp(menaceGauge + amount, 0f, maxMenace);
         RefreshMenaceText();
         EvaluateState();
@@ -145,6 +149,7 @@ public class DirectorAI : MonoBehaviour
 
     public void ReduceMenace(float amount)
     {
+        if (isMenaceLocked) return;
         menaceGauge = Mathf.Clamp(menaceGauge - amount, 0f, maxMenace);
         RefreshMenaceText();
         EvaluateState();
@@ -152,9 +157,22 @@ public class DirectorAI : MonoBehaviour
 
     public void SetMenace(float value)
     {
+        if (isMenaceLocked) return;
         menaceGauge = Mathf.Clamp(value, 0f, maxMenace);
         RefreshMenaceText();
         EvaluateState();
+    }
+
+    public void SetMenaceLocked(bool locked, float lockValue)
+    {
+        isMenaceLocked = locked;
+        if (locked)
+        {
+            lockedMenaceValue = lockValue;
+            menaceGauge = lockedMenaceValue;
+            RefreshMenaceText();
+            EvaluateState();
+        }
     }
 
     private void RefreshMenaceText()

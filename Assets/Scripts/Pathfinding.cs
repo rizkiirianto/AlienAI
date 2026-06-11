@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,6 +17,7 @@ public class Pathfinding : MonoBehaviour
     GameManager manager;
     HunterFOV fov;
     DirectorAI director;
+    public bool isForcedChase = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,13 @@ public class Pathfinding : MonoBehaviour
 
     private void FixedUpdate()
     {
-        seePlayer = HunterFOV.inFOV(transform, player.transform, 45f, 20f, 12f, 5f);
+        seePlayer = HunterFOV.inFOV(transform, player.transform, fov.maxAngle, fov.maxBackAngle, fov.maxRadius, fov.maxBackRadius);
+        
+        if (isForcedChase)
+        {
+            seePlayer = true;
+        }
+
         if (director != null)
             director.SetDirectSight(seePlayer);
 

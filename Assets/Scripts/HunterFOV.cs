@@ -49,55 +49,42 @@ public class HunterFOV : MonoBehaviour
 
     public static bool inFOV (Transform checkingObj, Transform target, float maxAngle, float maxBackAngle, float maxRadius, float maxBackRadius)
     {
-        Collider[] overlaps = new Collider[10]; //everything in FOV
-        Collider[] behind = new Collider[10]; //everything in behind FOV
-        int count = Physics.OverlapSphereNonAlloc(checkingObj.position, maxRadius, overlaps);
-        int behindCount = Physics.OverlapSphereNonAlloc(checkingObj.position, maxBackRadius, behind);
+        PlayerHiding hiding = target.GetComponent<PlayerHiding>();
+        if (hiding != null && hiding.IsHidden)
+            return false;
 
-        for(int i = 0; i < count; i++) //for behind the hunter
+        Vector3 directionBetween = target.position - checkingObj.position;
+        directionBetween.y = 0f; //height not a factor
+
+        float distanceToTarget = directionBetween.magnitude;
+        if (distanceToTarget <= Mathf.Epsilon)
+            return true;
+
+        Vector3 directionNormalized = directionBetween / distanceToTarget;
+        float angle = Vector3.Angle(checkingObj.forward, directionNormalized);
+
+        if (angle <= maxAngle && distanceToTarget <= maxRadius)
         {
-            if(behind[i] != null)
+            Ray ray = new Ray(checkingObj.position, target.position - checkingObj.position);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, maxRadius)) //if not behind something
             {
-                Vector3 directionBetween = (target.position - checkingObj.position).normalized;
-                directionBetween.y *= 0; //height not a factor
-
-                float angle = Vector3.Angle(checkingObj.forward, directionBetween);
-                if (angle >= maxBackAngle)
+                if (hit.transform == target || hit.transform.IsChildOf(target)) //if it's the target/player
                 {
-                    if (behind[i].transform == target)
-                    {
-                        Ray ray = new Ray(checkingObj.position, target.position - checkingObj.position);
-                        RaycastHit hit;
-                        if (Physics.Raycast(ray, out hit, maxBackRadius)) //if not behind something
-                        {
-                            if (hit.transform == target) //if it's the target/player
-                            {
-                                return true;
-                            }
-                        }
-                    }
+                    return true;
                 }
             }
-            else if(overlaps[i] != null) //for in front of the hunter
-            {
-                if(overlaps[i].transform == target) //if the target is in the FOV
-                {
-                    Vector3 directionBetween = (target.position - checkingObj.position).normalized;
-                    directionBetween.y *= 0; //height not a factor
+        }
 
-                    float angle = Vector3.Angle(checkingObj.forward, directionBetween);
-                    if(angle <= maxAngle) //if in the FOV angle zone
-                    {
-                        Ray ray = new Ray(checkingObj.position, target.position - checkingObj.position);
-                        RaycastHit hit;
-                        if(Physics.Raycast(ray, out hit, maxRadius)) //if not behind something
-                        {
-                            if(hit.transform == target) //if it's the target/player
-                            {
-                                return true;
-                            }
-                        }
-                    }
+        if (angle >= 180f - maxBackAngle && distanceToTarget <= maxBackRadius)
+        {
+            Ray ray = new Ray(checkingObj.position, target.position - checkingObj.position);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, maxBackRadius)) //if not behind something
+            {
+                if (hit.transform == target || hit.transform.IsChildOf(target)) //if it's the target/player
+                {
+                    return true;
                 }
             }
         }
