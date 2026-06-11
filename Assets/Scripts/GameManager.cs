@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
     private void StartSurvivalPhase()
     {
         CurrentPhase = GamePhase.Survival;
-        survivalTimer = 120f;
+        survivalTimer = 60f;
         
         if (survivalTimerText != null)
             survivalTimerText.gameObject.SetActive(true);
